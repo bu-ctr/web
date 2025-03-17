@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Couples Connection</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/js/main.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #fff0f3, #ffccd5);
+            text-align: center;
+            color: #4a4a4a;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header {
+            padding: 80px 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        h1 {
+            font-size: 4.5rem;
+            font-weight: bold;
+            color: #d6336c;
+            text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+            animation: pulse 2s infinite alternate;
+        }
+        p {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            font-weight: 500;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 20px 60px;
+            background: #e63956;
+            color: white;
+            text-decoration: none;
+            font-size: 1.8rem;
+            font-weight: bold;
+            border-radius: 50px;
+            box-shadow: 0 8px 25px rgba(230, 57, 86, 0.5);
+            transition: transform 0.3s ease-in-out, background 0.3s;
+            animation: bounce 1.5s infinite alternate;
+        }
+        .cta-button:hover {
+            transform: scale(1.15);
+            background: #bf2d4e;
+        }
+        .features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 60px;
+        }
+        .feature {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 20px;
+            width: 350px;
+            backdrop-filter: blur(15px);
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            animation: slideUp 1s ease-in-out;
+        }
+        .feature:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+        }
+        footer {
+            margin-top: 60px;
+            padding: 35px;
+            background: rgba(230, 57, 86, 0.4);
+            color: #4a4a4a;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-12px); }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.07); }
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Find Your Forever</h1>
+        <p>Real connections, real love. Your journey to a lasting relationship starts today.</p>
+        <a href="partner-selection.html" class="cta-button">Start Your Love Story</a>
+    </header>
+    
+    <section class="features">
+        <div class="feature">
+            <h2>Effortless Connection</h2>
+            <p>Join and instantly bond with your partner in a way you've never experienced before.</p>
+        </div>
+        <div class="feature">
+            <h2>Secure & Private</h2>
+            <p>Your information is encrypted and protected, ensuring complete privacy for you and your partner.</p>
+        </div>
+        <div class="feature">
+            <h2>Instant Verification</h2>
+            <p>Receive a secure confirmation link straight to your phone, making the process seamless and easy.</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Couples Connection. Build the future of your love today.</p>
+    </footer>
+</body>
+</html>
